@@ -1,0 +1,39 @@
+/*------------  QUOTE STYLES ------------*/
+
+/*---  BLOCKQUOTE ---*/
+blockquote {
+	font-size: 0.9em;
+	margin: 2em auto;
+	padding: 2em;
+	width: 70%;
+
+	p {
+		color: $medium-gray;
+
+		&:last-of-type  {
+			margin-bottom: 0;
+		}
+	}
+
+	em {
+
+	}
+}
+
+
+
+/*--- PULL QUOTE ---*/
+.pullquotes {
+	font: 1.2em/1.5em $tiempos-bold;
+	position: relative;
+	margin: 1em;
+	padding: 1em 0;
+	color: $quote-color;
+	border-top: 1px solid rgba($black, 0.1);
+	border-bottom: 1px solid rgba($black, 0.1);
+	text-align: center;
+
+	em {
+		font-family: $tiempos-bold-italic;
+	}
+}

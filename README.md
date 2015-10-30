@@ -1,1 +1,2 @@
-# 2015-made-series-bloodroot-blades
+# 2015-made-bloodroot-blades
+Part of the Made series

@@ -1,0 +1,794 @@
+/* page compilation --*/
+@font-face {
+  font-family: 'TiemposHeadline-BoldItalic';
+  src: url("../fonts/TiemposHeadline-BoldItalic.otf") format("opentype");
+}
+/* line 1, ../scss/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #2800D7;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 21, ../scss/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
+button:hover,
+button:focus {
+  background-color: #1a008b;
+  color: #fff;
+}
+/* line 27, ../scss/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* line 1, ../scss/base/_forms.scss */
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.875em;
+  padding: 1.75em;
+}
+
+/* line 8, ../scss/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 1.25em;
+}
+
+/* line 16, ../scss/base/_forms.scss */
+label {
+  font-weight: 600;
+  margin-bottom: 0.4375em;
+}
+/* line 20, ../scss/base/_forms.scss */
+label.required::after {
+  content: "*";
+}
+/* line 24, ../scss/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 29, ../scss/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+select[multiple=multiple],
+textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 1.25em;
+  margin-bottom: 0.875em;
+  padding: 0.58333em;
+  transition: border-color;
+  width: 100%;
+}
+/* line 44, ../scss/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+select[multiple=multiple]:hover,
+textarea:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, ../scss/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+select[multiple=multiple]:focus,
+textarea:focus {
+  border-color: #2800D7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(35, 0, 190, 0.7);
+  outline: none;
+}
+
+/* line 55, ../scss/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, ../scss/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 63, ../scss/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.4375em;
+}
+
+/* line 69, ../scss/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.875em;
+  width: 100%;
+}
+
+/* line 74, ../scss/base/_forms.scss */
+select {
+  margin-bottom: 1.75em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, ../scss/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../scss/base/_lists.scss */
+dl {
+  margin-bottom: 0.875em;
+}
+/* line 23, ../scss/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.875em;
+}
+/* line 28, ../scss/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, ../scss/base/_tables.scss */
+table {
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
+  border-collapse: collapse;
+  margin: 0.875em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 9, ../scss/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: 600;
+  padding: 0.875em 0;
+  text-align: left;
+}
+
+/* line 16, ../scss/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.875em 0;
+}
+
+/* line 21, ../scss/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1, ../scss/base/_typography.scss */
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 1.25em;
+  line-height: 1.75;
+}
+
+/* line 11, ../scss/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
+  font-weight: normal;
+  margin: 0 0 0.875em;
+}
+
+/* line 23, ../scss/base/_typography.scss */
+h1 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin-bottom: 0.1em;
+  color: #8a6945;
+}
+
+/* line 30, ../scss/base/_typography.scss */
+p {
+  margin: 0 auto 1.75em;
+  max-width: 800px;
+}
+
+/* line 36, ../scss/base/_typography.scss */
+em {
+  font-family: "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+}
+
+/* line 40, ../scss/base/_typography.scss */
+a {
+  color: #2800D7;
+  transition: color 0.1s linear;
+}
+/* line 44, ../scss/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: inherit;
+}
+/* line 50, ../scss/base/_typography.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/* line 56, ../scss/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.75em 0;
+}
+
+/* line 64, ../scss/base/_typography.scss */
+img,
+picture {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
+
+                     /*-- Edit color and typography in _variables.scss & _typography.scss.
+						  Check font family options in public/scss/bourbon/addons/_font-stacks.scss: --*/
+/*-- STYLES WE CONTROL -- */
+/*------------  STYLES FOR THE EXAMPLE PAGES GOES HERE ------------*/
+/* line 4, ../scss/layout/_example_page.scss */
+.example_headers {
+  max-width: 1215px;
+  margin: 0 auto;
+}
+/* line 20, ../scss/bourbon/addons/_clearfix.scss */
+.example_headers::before, .example_headers::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 11, ../scss/layout/_example_page.scss */
+.example_title, .example_subtitle {
+  color: #444;
+}
+
+/* line 15, ../scss/layout/_example_page.scss */
+.example_title {
+  font: 2em "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  margin: 2em auto 0;
+  border-bottom: 1px solid #3c3c3c;
+  padding-bottom: 0.25em;
+}
+
+/* line 22, ../scss/layout/_example_page.scss */
+.example_subtitle {
+  font: 1em "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  margin: 3em auto 0.5em;
+  color: #333;
+  display: inline-block;
+  background-color: rgba(249, 70, 15, 0.5);
+  padding: 0 0.25em;
+}
+
+/*-- this is where the style for this site goes --*/
+/*------------ LEDE STYLES ------------*/
+/* line 8, ../scss/layout/_ledes.scss */
+#main {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+/* line 14, ../scss/layout/_ledes.scss */
+#footer {
+  width: inherit;
+  color: #fefdfc;
+}
+
+/*------------ COMMON STYLES ------------*/
+/* line 22, ../scss/layout/_ledes.scss */
+.lede-content {
+  max-width: 720px;
+  max-width: 720px;
+  margin: 0 1em;
+  z-index: 1;
+}
+/* line 29, ../scss/layout/_ledes.scss */
+.lede-content h1 {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #000;
+  display: inline;
+}
+/* line 35, ../scss/layout/_ledes.scss */
+.lede-content h1 em {
+  font-family: "BWHaasText-76BoldItalic", serif;
+}
+/* line 40, ../scss/layout/_ledes.scss */
+.lede-content .dek {
+  font: 1em/1.2em "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  padding: 0;
+  text-align: left;
+  margin: 0.5em 0 0;
+}
+/* line 48, ../scss/layout/_ledes.scss */
+.lede-content .dek em {
+  font-family: "BWHaasText-76BoldItalic", serif;
+}
+/* line 53, ../scss/layout/_ledes.scss */
+.lede-content .byline-feat {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 5px 0;
+  display: inline;
+}
+
+/*--- VIDEO LEDE ---*/
+/* line 65, ../scss/layout/_ledes.scss */
+.lede-video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 1em;
+}
+/* line 71, ../scss/layout/_ledes.scss */
+.lede-video video {
+  width: 100%;
+  display: none;
+}
+/* line 76, ../scss/layout/_ledes.scss */
+.lede-video .mobile-lede {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* line 84, ../scss/layout/_ledes.scss */
+#top-video {
+  display: none;
+}
+
+/* line 89, ../scss/layout/_ledes.scss */
+#main .video-tout {
+  display: block;
+  width: 200px;
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  margin: 0.5em 0 4% 1em;
+  position: relative;
+  z-index: 1;
+  box-sizing: content-box;
+}
+/* line 103, ../scss/layout/_ledes.scss */
+#main a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 108, ../scss/layout/_ledes.scss */
+#main #mobile-tout {
+  display: block;
+}
+/* line 112, ../scss/layout/_ledes.scss */
+#main #lede-tout {
+  display: none;
+}
+
+/*------------ IMAGES STYLES ------------*/
+/* line 3, ../scss/layout/_images.scss */
+.photo-info {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 7, ../scss/layout/_images.scss */
+figcaption, .caption {
+  font: 0.7em "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
+  color: #3c3c3c;
+}
+
+/* line 12, ../scss/layout/_images.scss */
+figcaption {
+  margin-right: 0.325em;
+  margin-top: 0.3em;
+}
+
+/* line 17, ../scss/layout/_images.scss */
+.caption {
+  width: 90%;
+  margin: -2em auto 2em;
+  max-width: 1280px;
+}
+
+/* line 23, ../scss/layout/_images.scss */
+.credit {
+  font-size: 0.6em;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  color: #fefdfc;
+}
+
+/* line 31, ../scss/layout/_images.scss */
+.img_full, .img_left, .img_right {
+  margin: 1em;
+}
+
+/* line 35, ../scss/layout/_images.scss */
+.img_parallax {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 41, ../scss/layout/_images.scss */
+.img_parallax + .photo-info {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*------------ VIDEO STYLES ------------*/
+/* line 48, ../scss/layout/_images.scss */
+.video {
+  margin: 40px auto;
+}
+
+/* line 52, ../scss/layout/_images.scss */
+.video-js, .video iframe {
+  margin: 0 auto;
+  min-width: 970px;
+  min-height: 546px;
+  display: block;
+}
+
+/* line 59, ../scss/layout/_images.scss */
+.terminal .video {
+  display: none;
+}
+
+/*------------  QUOTE STYLES ------------*/
+/*---  BLOCKQUOTE ---*/
+/* line 4, ../scss/layout/_quotes.scss */
+blockquote {
+  font-size: 0.9em;
+  margin: 2em auto;
+  padding: 2em;
+  width: 70%;
+}
+/* line 10, ../scss/layout/_quotes.scss */
+blockquote p {
+  color: #999;
+}
+/* line 13, ../scss/layout/_quotes.scss */
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*--- PULL QUOTE ---*/
+/* line 26, ../scss/layout/_quotes.scss */
+.pullquotes {
+  font: 1.2em/1.5em "TiemposHeadlineWeb-Bold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  position: relative;
+  margin: 1em;
+  padding: 1em 0;
+  color: #8a6945;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* line 36, ../scss/layout/_quotes.scss */
+.pullquotes em {
+  font-family: "TiemposHeadline-BoldItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+}
+
+/*------------  SIDEBAR STYLES ------------*/
+/*--- LEFT SIDEBAR ---*/
+/* line 6, ../scss/layout/_sidebar.scss */
+.sidebar_left {
+  float: left;
+  border-right: 1px solid #ddd;
+  padding-right: 30px;
+}
+
+/*---  RIGHT SIDEBAR ---*/
+/* line 15, ../scss/layout/_sidebar.scss */
+.sidebar_right {
+  float: right;
+  border-left: 1px solid #ddd;
+  padding-left: 30px;
+}
+
+/*---  SIDEBAR W/ TEXT ---*/
+/* line 24, ../scss/layout/_sidebar.scss */
+.sidebar_right, .sidebar_left {
+  width: 20rem;
+  max-width: 320px;
+  margin: 0.5rem 40px 1rem 40px;
+}
+/* line 29, ../scss/layout/_sidebar.scss */
+.sidebar_right h3, .sidebar_left h3 {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+}
+/* line 35, ../scss/layout/_sidebar.scss */
+.sidebar_right .sidebar_text p, .sidebar_left .sidebar_text p {
+  font-size: 0.7em;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/*---  SIDEBAR W/ IMAGES ---*/
+/*------------  VIDEOS & DAVA VIZ EMBEDS STYLES ------------*/
+/*------------  VIDEOS STYLES ------------*/
+/*------------  INTERACTIVES STYLES ------------*/
+/*-- BODY COPY STYLES -- */
+/* line 2, ../scss/layout/_body.scss */
+body {
+  background-color: #ceb29b;
+}
+
+/*-- CENTERED COLUMN -- */
+/* line 10, ../scss/layout/_body.scss */
+p {
+  margin: 0 1em 1em;
+  max-width: 720px;
+  font: 16px/1.6em "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  color: #3c3c3c;
+}
+/* line 16, ../scss/layout/_body.scss */
+p a {
+  color: #3c3c3c;
+  text-decoration: none;
+  border-bottom: 2px solid #2800D7;
+}
+
+/* line 23, ../scss/layout/_body.scss */
+.section-break {
+  margin-top: 2em;
+}
+/* line 26, ../scss/layout/_body.scss */
+.section-break:first-line {
+  font: 20px "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #8a6945;
+}
+
+/* line 32, ../scss/layout/_body.scss */
+.made-series {
+  margin: 2em 1em 0;
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+/* line 38, ../scss/layout/_body.scss */
+.terminal p a {
+  border-bottom: none;
+}
+
+/* line 42, ../scss/layout/_body.scss */
+.closer {
+  display: inline;
+  margin-top: -5px;
+  margin-left: 2px;
+  height: 14px;
+}
+
+/* line 49, ../scss/layout/_body.scss */
+.top-banner a:hover {
+  color: #fff;
+}
+
+/* line 53, ../scss/layout/_body.scss */
+.published-at, .brief__story-published-at {
+  color: #fefdfc;
+}
+
+/*-- MEDIA QUERIES -- */
+@media screen and (min-width: 768px) {
+  /* line 3, ../scss/mediaqueries/_desktop.scss */
+  .lede-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+  /* line 7, ../scss/mediaqueries/_desktop.scss */
+  .lede-content .dek {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  /* line 14, ../scss/mediaqueries/_desktop.scss */
+  .lede-video video {
+    display: block;
+    margin-bottom: 30px;
+  }
+  /* line 19, ../scss/mediaqueries/_desktop.scss */
+  .lede-video .mobile-lede {
+    display: none;
+  }
+
+  /* line 24, ../scss/mediaqueries/_desktop.scss */
+  h1 {
+    font-size: 4rem;
+    line-height: 1.1em;
+    margin-bottom: 0.1em;
+    color: #8a6945;
+  }
+
+  /* line 32, ../scss/mediaqueries/_desktop.scss */
+  p {
+    width: 60%;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+
+  /* line 39, ../scss/mediaqueries/_desktop.scss */
+  .img_full {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto 3rem;
+  }
+
+  /* line 51, ../scss/mediaqueries/_desktop.scss */
+  .img_left, .img_right {
+    max-width: 450px;
+    margin: 1em 40px;
+  }
+
+  /* line 56, ../scss/mediaqueries/_desktop.scss */
+  .img_left {
+    float: left;
+  }
+
+  /* line 60, ../scss/mediaqueries/_desktop.scss */
+  .img_right {
+    float: right;
+  }
+
+  /* line 64, ../scss/mediaqueries/_desktop.scss */
+  .pullquotes {
+    font-size: 2.2em;
+    line-height: 3.2rem;
+    width: 58%;
+    max-width: 48rem;
+    padding: 1.25em 0;
+    margin: 1em auto;
+  }
+
+  /* line 73, ../scss/mediaqueries/_desktop.scss */
+  .section-break {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  /* line 78, ../scss/mediaqueries/_desktop.scss */
+  .made-series {
+    margin: 1em auto 0;
+  }
+
+  /* line 83, ../scss/mediaqueries/_desktop.scss */
+  #main .video-tout {
+    margin: -3% auto 4%;
+    bottom: 33%;
+    position: absolute;
+    left: 33%;
+  }
+  /* line 91, ../scss/mediaqueries/_desktop.scss */
+  #main #mobile-tout {
+    display: none;
+  }
+  /* line 95, ../scss/mediaqueries/_desktop.scss */
+  #main #lede-tout {
+    display: block;
+  }
+}
+/* RETINA */
+/* Print Styles
+ ========================================================================== */
+@media print {
+  /* line 5, ../scss/mediaqueries/_print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 12, ../scss/mediaqueries/_print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 17, ../scss/mediaqueries/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 21, ../scss/mediaqueries/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*Don't show links for img, or javascript/internal links*/
+  /* line 26, ../scss/mediaqueries/_print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 30, ../scss/mediaqueries/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 33, ../scss/mediaqueries/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 35, ../scss/mediaqueries/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 38, ../scss/mediaqueries/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 42, ../scss/mediaqueries/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 46, ../scss/mediaqueries/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

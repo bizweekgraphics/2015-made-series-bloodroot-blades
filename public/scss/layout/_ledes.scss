@@ -1,0 +1,115 @@
+$HaasBold: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+$black: #000;
+$white: #fff;
+
+
+/*------------ LEDE STYLES ------------*/
+
+#main {
+	height:100%;
+	overflow:visible;
+	position:relative;
+}
+
+#footer {
+	width: inherit;
+	color: $light-gold;
+}
+
+
+/*------------ COMMON STYLES ------------*/
+
+.lede-content {
+	max-width: 720px;
+	max-width: 720px;
+	margin: 0 1em;
+	// position: absolute;
+	z-index: 1;
+	
+	h1 {
+		font-family: $HaasBold;
+		color: $black;
+		// background-color: $white;
+		display: inline;
+
+		em {
+			font-family: $bwhaas-bold-italic;
+		}
+	}
+
+	.dek {
+		font: 1em/1.2em $HaasBold;
+		padding: 0;
+		// display: inline;
+		text-align: left;
+		// background-color: $white;
+		margin: 0.5em 0 0;
+
+		em {
+			font-family: $bwhaas-bold-italic;
+		}
+	}
+
+	.byline-feat {
+		font-family: $HaasBold;
+		color: $black;
+		margin: 5px 0;
+		// background-color: $white;
+		display: inline;
+	}
+}
+
+
+/*--- VIDEO LEDE ---*/
+
+.lede-video {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: 1em;
+
+	video {
+		width: 100%;
+		display: none;
+	}
+
+	.mobile-lede {
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+}
+
+#top-video {
+    display: none;
+}
+
+#main {
+	.video-tout {
+	    display: block;
+	    width: 200px;
+	    background-color: $black;
+	    padding: 10px;
+	    color: $white;
+	    font-family: $HaasBold;
+	    // text-align: center;
+	    margin: 0.5em 0 4% 1em;
+	    position: relative;
+	    z-index: 1;
+	    box-sizing: content-box;
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	#mobile-tout {
+	    display: block;
+	}
+
+	#lede-tout {
+	    display: none;
+	}
+}

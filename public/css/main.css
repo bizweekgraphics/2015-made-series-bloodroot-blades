@@ -402,13 +402,18 @@ picture {
   width: 100%;
   margin-bottom: 1em;
 }
+/* line 110, ../scss/layout/_ledes.scss */
+.lede-video .video-js {
+  margin-top: -56.25%;
+  z-index: 1000;
+}
 
-/* line 112, ../scss/layout/_ledes.scss */
+/* line 117, ../scss/layout/_ledes.scss */
 #top-video {
   display: none;
 }
 
-/* line 117, ../scss/layout/_ledes.scss */
+/* line 122, ../scss/layout/_ledes.scss */
 .video-tout a {
   color: #fff;
 }
@@ -704,12 +709,7 @@ p a {
 
   /* line 83, ../scss/mediaqueries/_desktop.scss */
   #main .video-tout {
-    position: absolute;
-    z-index: 100;
-    text-align: center;
-    left: 50%;
-    top: 74%;
-    transform: translate(-74%, -50%);
+    margin: -5% auto 3%;
   }
   /* line 100, ../scss/mediaqueries/_desktop.scss */
   #main #mobile-tout {

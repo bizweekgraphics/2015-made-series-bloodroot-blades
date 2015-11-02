@@ -315,56 +315,43 @@ picture {
   position: relative;
 }
 /* line 13, ../scss/layout/_ledes.scss */
-#main .video-tout {
-  display: block;
-  width: 200px;
-  background-color: #000;
-  padding: 10px;
-  color: #fff;
-  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
-  margin: 0.5em 0 4% 1em;
-  position: relative;
-  z-index: 1;
-  box-sizing: content-box;
-}
-/* line 27, ../scss/layout/_ledes.scss */
 #main a {
   text-decoration: none;
 }
-/* line 33, ../scss/layout/_ledes.scss */
+/* line 19, ../scss/layout/_ledes.scss */
 #main #mobile-tout {
   display: block;
 }
-/* line 37, ../scss/layout/_ledes.scss */
+/* line 23, ../scss/layout/_ledes.scss */
 #main #lede-tout {
   display: none;
 }
 
-/* line 42, ../scss/layout/_ledes.scss */
+/* line 28, ../scss/layout/_ledes.scss */
 #footer {
   width: inherit;
   color: #fefdfc;
 }
 
 /*------------ COMMON STYLES ------------*/
-/* line 50, ../scss/layout/_ledes.scss */
+/* line 36, ../scss/layout/_ledes.scss */
 .lede-content {
   max-width: 720px;
   max-width: 720px;
   margin: 0 1em;
   z-index: 1;
 }
-/* line 57, ../scss/layout/_ledes.scss */
+/* line 43, ../scss/layout/_ledes.scss */
 .lede-content h1 {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
   display: inline;
 }
-/* line 63, ../scss/layout/_ledes.scss */
+/* line 49, ../scss/layout/_ledes.scss */
 .lede-content h1 em {
   font-family: "BWHaasText-76BoldItalic", serif;
 }
-/* line 68, ../scss/layout/_ledes.scss */
+/* line 54, ../scss/layout/_ledes.scss */
 .lede-content .dek {
   font: 1em/1.2em "HaasDisplayBold", Helvetica, Arial, sans-serif;
   padding: 0;
@@ -372,11 +359,11 @@ picture {
   margin: 0.5em 0 0;
   color: #8a6945;
 }
-/* line 77, ../scss/layout/_ledes.scss */
+/* line 63, ../scss/layout/_ledes.scss */
 .lede-content .dek em {
   font-family: "BWHaasText-76BoldItalic", serif;
 }
-/* line 82, ../scss/layout/_ledes.scss */
+/* line 68, ../scss/layout/_ledes.scss */
 .lede-content .byline-feat {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
@@ -385,40 +372,61 @@ picture {
 }
 
 /*--- VIDEO LEDE ---*/
-/* line 94, ../scss/layout/_ledes.scss */
+/* line 80, ../scss/layout/_ledes.scss */
 .lede-video {
   width: 100%;
   height: auto;
   position: relative;
   margin-bottom: 1em;
 }
-/* line 100, ../scss/layout/_ledes.scss */
+/* line 86, ../scss/layout/_ledes.scss */
 .lede-video video {
   width: 100%;
   display: none;
 }
-/* line 105, ../scss/layout/_ledes.scss */
+/* line 91, ../scss/layout/_ledes.scss */
 .lede-video .mobile-lede {
   display: block;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 111, ../scss/layout/_ledes.scss */
+/* line 97, ../scss/layout/_ledes.scss */
 .lede-video .video-js {
-  margin-top: -56.25%;
+  margin-top: -50%;
   z-index: 1000;
-  width: 100% !important;
   min-width: 320px;
-  height: 100% !important;
   min-height: 180px;
 }
 
-/* line 122, ../scss/layout/_ledes.scss */
+/* line 108, ../scss/layout/_ledes.scss */
 #top-video {
   display: none;
 }
 
-/* line 127, ../scss/layout/_ledes.scss */
+/* line 112, ../scss/layout/_ledes.scss */
+#mobile-tout {
+  display: block;
+  width: 80px;
+  width: 200px;
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  margin: 1em 0 4% 1em;
+}
+
+/* line 124, ../scss/layout/_ledes.scss */
+#lede-tout {
+  width: 80px;
+}
+
+/* line 128, ../scss/layout/_ledes.scss */
+.video-tout {
+  position: relative;
+  z-index: 1;
+  box-sizing: content-box;
+}
+/* line 133, ../scss/layout/_ledes.scss */
 .video-tout a {
   color: #fff;
 }
@@ -669,8 +677,12 @@ p a {
   .lede-video .mobile-lede {
     display: none;
   }
+  /* line 23, ../scss/mediaqueries/_desktop.scss */
+  .lede-video .video-js {
+    margin-top: -48%;
+  }
 
-  /* line 24, ../scss/mediaqueries/_desktop.scss */
+  /* line 28, ../scss/mediaqueries/_desktop.scss */
   h1 {
     font-size: 4rem;
     line-height: 1.1em;
@@ -678,7 +690,7 @@ p a {
     color: #8a6945;
   }
 
-  /* line 32, ../scss/mediaqueries/_desktop.scss */
+  /* line 36, ../scss/mediaqueries/_desktop.scss */
   p {
     width: 60%;
     margin: 30px auto;
@@ -686,30 +698,30 @@ p a {
     line-height: 1.6em;
   }
 
-  /* line 39, ../scss/mediaqueries/_desktop.scss */
+  /* line 43, ../scss/mediaqueries/_desktop.scss */
   .img_full {
     width: 90%;
     max-width: 1280px;
     margin: 0 auto 3rem;
   }
 
-  /* line 51, ../scss/mediaqueries/_desktop.scss */
+  /* line 55, ../scss/mediaqueries/_desktop.scss */
   .img_left, .img_right {
     max-width: 450px;
     margin: 1em 40px;
   }
 
-  /* line 56, ../scss/mediaqueries/_desktop.scss */
+  /* line 60, ../scss/mediaqueries/_desktop.scss */
   .img_left {
     float: left;
   }
 
-  /* line 60, ../scss/mediaqueries/_desktop.scss */
+  /* line 64, ../scss/mediaqueries/_desktop.scss */
   .img_right {
     float: right;
   }
 
-  /* line 64, ../scss/mediaqueries/_desktop.scss */
+  /* line 68, ../scss/mediaqueries/_desktop.scss */
   .pullquotes {
     font-size: 2.2em;
     line-height: 3.2rem;
@@ -719,33 +731,34 @@ p a {
     margin: 1em auto;
   }
 
-  /* line 73, ../scss/mediaqueries/_desktop.scss */
+  /* line 77, ../scss/mediaqueries/_desktop.scss */
   .section-break {
     margin-top: 50px;
     padding-top: 50px;
   }
 
-  /* line 78, ../scss/mediaqueries/_desktop.scss */
+  /* line 82, ../scss/mediaqueries/_desktop.scss */
   .made-series {
     margin: 1em auto 0;
   }
 
-  /* line 83, ../scss/mediaqueries/_desktop.scss */
+  /* line 87, ../scss/mediaqueries/_desktop.scss */
   #main .video-tout {
-    margin: -5% auto 3%;
+    margin: -9% auto 3%;
   }
-  /* line 100, ../scss/mediaqueries/_desktop.scss */
+  /* line 92, ../scss/mediaqueries/_desktop.scss */
   #main #mobile-tout {
     display: none;
   }
-  /* line 104, ../scss/mediaqueries/_desktop.scss */
+  /* line 96, ../scss/mediaqueries/_desktop.scss */
   #main #lede-tout {
     display: block;
   }
 }
 @media screen and (min-width: 970px) {
-  /* line 111, ../scss/mediaqueries/_desktop.scss */
+  /* line 103, ../scss/mediaqueries/_desktop.scss */
   .lede-video .video-js {
+    margin-top: -54%;
     min-width: 970px;
     min-height: 546px;
   }

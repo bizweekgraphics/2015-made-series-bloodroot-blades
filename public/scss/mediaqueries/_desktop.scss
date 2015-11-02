@@ -19,6 +19,10 @@
 		.mobile-lede {
 			display: none;
 		}
+
+		.video-js {
+			margin-top: -48%;
+		}
 	}
 
 	h1 {
@@ -81,19 +85,7 @@
 
 	#main {
 		.video-tout {
-		    margin: -5% auto 3%;
-		    // bottom: 33%;
-		    // position: absolute;
-		    // left: 33%;
-		 //    position: relative;
-			// top: 50%;
-			// transform: translateY(-50%);
-			// position: absolute;
-		 //    z-index: 100;
-		 //    text-align: center;
-		 //    left: 50%;
-		 //    top: 58%;
-		 //    transform: translate(-58%, -50%);
+		    margin: -9% auto 3%;
 		}
 
 
@@ -109,6 +101,7 @@
 @media screen and (min-width: 970px) {
 	.lede-video {
 		.video-js {
+			margin-top: -54%;
 			min-width: 970px;
 			min-height: 546px;
 		}

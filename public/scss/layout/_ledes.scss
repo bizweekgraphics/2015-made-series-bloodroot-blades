@@ -10,20 +10,6 @@ $white: #fff;
 	overflow:visible;
 	position:relative;
 
-	.video-tout {
-	    display: block;
-	    width: 200px;
-	    background-color: $black;
-	    padding: 10px;
-	    color: $white;
-	    font-family: $HaasBold;
-	    // text-align: center;
-	    margin: 0.5em 0 4% 1em;
-	    position: relative;
-	    z-index: 1;
-	    box-sizing: content-box;
-	}
-
 	a {
 		// color: $white;
 		// color: $quote-color;
@@ -109,11 +95,11 @@ $white: #fff;
 	}
 
 	.video-js {
-	    margin-top: -56.25%;
+	    margin-top: -50%;
 	    z-index: 1000;
-	    width: 100% !important;
+	    // width: 100% !important;
 	    min-width: 320px;
-	    height: 100% !important;
+	    // height: 100% !important;
 	    min-height: 180px;
 	 }
 
@@ -123,7 +109,27 @@ $white: #fff;
     display: none;
 }
 
+#mobile-tout {
+    display: block;
+    width: 80px;
+    width: 200px;
+    background-color: $black;
+    padding: 10px;
+    color: $white;
+    font-family: $HaasBold;
+    // text-align: center;
+    margin: 1em 0 4% 1em;
+}
+
+#lede-tout {
+	width: 80px;
+}
+
 .video-tout {
+    position: relative;
+    z-index: 1;
+    box-sizing: content-box;
+
     a {
     	color: $white;
     }

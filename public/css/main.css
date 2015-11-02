@@ -624,6 +624,11 @@ p a {
   color: #fefdfc;
 }
 
+/* line 57, ../scss/layout/_body.scss */
+.hidden {
+  display: none;
+}
+
 /*-- MEDIA QUERIES -- */
 @media screen and (min-width: 768px) {
   /* line 3, ../scss/mediaqueries/_desktop.scss */

@@ -314,76 +314,7 @@ picture {
   overflow: visible;
   position: relative;
 }
-
-/* line 14, ../scss/layout/_ledes.scss */
-#footer {
-  width: inherit;
-  color: #fefdfc;
-}
-
-/*------------ COMMON STYLES ------------*/
-/* line 22, ../scss/layout/_ledes.scss */
-.lede-content {
-  max-width: 720px;
-  max-width: 720px;
-  margin: 0 1em;
-  z-index: 1;
-}
-/* line 29, ../scss/layout/_ledes.scss */
-.lede-content h1 {
-  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
-  color: #000;
-  display: inline;
-}
-/* line 35, ../scss/layout/_ledes.scss */
-.lede-content h1 em {
-  font-family: "BWHaasText-76BoldItalic", serif;
-}
-/* line 40, ../scss/layout/_ledes.scss */
-.lede-content .dek {
-  font: 1em/1.2em "HaasDisplayBold", Helvetica, Arial, sans-serif;
-  padding: 0;
-  text-align: left;
-  margin: 0.5em 0 0;
-}
-/* line 48, ../scss/layout/_ledes.scss */
-.lede-content .dek em {
-  font-family: "BWHaasText-76BoldItalic", serif;
-}
-/* line 53, ../scss/layout/_ledes.scss */
-.lede-content .byline-feat {
-  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
-  color: #000;
-  margin: 5px 0;
-  display: inline;
-}
-
-/*--- VIDEO LEDE ---*/
-/* line 65, ../scss/layout/_ledes.scss */
-.lede-video {
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-bottom: 1em;
-}
-/* line 71, ../scss/layout/_ledes.scss */
-.lede-video video {
-  width: 100%;
-  display: none;
-}
-/* line 76, ../scss/layout/_ledes.scss */
-.lede-video .mobile-lede {
-  display: block;
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-/* line 84, ../scss/layout/_ledes.scss */
-#top-video {
-  display: none;
-}
-
-/* line 89, ../scss/layout/_ledes.scss */
+/* line 13, ../scss/layout/_ledes.scss */
 #main .video-tout {
   display: block;
   width: 200px;
@@ -396,18 +327,90 @@ picture {
   z-index: 1;
   box-sizing: content-box;
 }
-/* line 103, ../scss/layout/_ledes.scss */
+/* line 27, ../scss/layout/_ledes.scss */
 #main a {
-  color: #fff;
   text-decoration: none;
 }
-/* line 108, ../scss/layout/_ledes.scss */
+/* line 33, ../scss/layout/_ledes.scss */
 #main #mobile-tout {
   display: block;
 }
-/* line 112, ../scss/layout/_ledes.scss */
+/* line 37, ../scss/layout/_ledes.scss */
 #main #lede-tout {
   display: none;
+}
+
+/* line 42, ../scss/layout/_ledes.scss */
+#footer {
+  width: inherit;
+  color: #fefdfc;
+}
+
+/*------------ COMMON STYLES ------------*/
+/* line 50, ../scss/layout/_ledes.scss */
+.lede-content {
+  max-width: 720px;
+  max-width: 720px;
+  margin: 0 1em;
+  z-index: 1;
+}
+/* line 57, ../scss/layout/_ledes.scss */
+.lede-content h1 {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #000;
+  display: inline;
+}
+/* line 63, ../scss/layout/_ledes.scss */
+.lede-content h1 em {
+  font-family: "BWHaasText-76BoldItalic", serif;
+}
+/* line 68, ../scss/layout/_ledes.scss */
+.lede-content .dek {
+  font: 1em/1.2em "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  padding: 0;
+  text-align: left;
+  margin: 0.5em 0 0;
+}
+/* line 76, ../scss/layout/_ledes.scss */
+.lede-content .dek em {
+  font-family: "BWHaasText-76BoldItalic", serif;
+}
+/* line 81, ../scss/layout/_ledes.scss */
+.lede-content .byline-feat {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 5px 0;
+  display: inline;
+}
+
+/*--- VIDEO LEDE ---*/
+/* line 93, ../scss/layout/_ledes.scss */
+.lede-video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 1em;
+}
+/* line 99, ../scss/layout/_ledes.scss */
+.lede-video video {
+  width: 100%;
+  display: none;
+}
+/* line 104, ../scss/layout/_ledes.scss */
+.lede-video .mobile-lede {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* line 112, ../scss/layout/_ledes.scss */
+#top-video {
+  display: none;
+}
+
+/* line 117, ../scss/layout/_ledes.scss */
+.video-tout a {
+  color: #fff;
 }
 
 /*------------ IMAGES STYLES ------------*/
@@ -573,7 +576,7 @@ p {
 p a {
   color: #3c3c3c;
   text-decoration: none;
-  border-bottom: 2px solid #2800D7;
+  border-bottom: 2px solid #8a6945;
 }
 
 /* line 23, ../scss/layout/_body.scss */
@@ -701,16 +704,18 @@ p a {
 
   /* line 83, ../scss/mediaqueries/_desktop.scss */
   #main .video-tout {
-    margin: -3% auto 4%;
-    bottom: 33%;
     position: absolute;
-    left: 33%;
+    z-index: 100;
+    text-align: center;
+    left: 50%;
+    top: 74%;
+    transform: translate(-74%, -50%);
   }
-  /* line 91, ../scss/mediaqueries/_desktop.scss */
+  /* line 100, ../scss/mediaqueries/_desktop.scss */
   #main #mobile-tout {
     display: none;
   }
-  /* line 95, ../scss/mediaqueries/_desktop.scss */
+  /* line 104, ../scss/mediaqueries/_desktop.scss */
   #main #lede-tout {
     display: block;
   }

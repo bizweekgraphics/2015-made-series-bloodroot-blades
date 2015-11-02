@@ -9,6 +9,34 @@ $white: #fff;
 	height:100%;
 	overflow:visible;
 	position:relative;
+
+	.video-tout {
+	    display: block;
+	    width: 200px;
+	    background-color: $black;
+	    padding: 10px;
+	    color: $white;
+	    font-family: $HaasBold;
+	    // text-align: center;
+	    margin: 0.5em 0 4% 1em;
+	    position: relative;
+	    z-index: 1;
+	    box-sizing: content-box;
+	}
+
+	a {
+		// color: $white;
+		// color: $quote-color;
+		text-decoration: none;
+	}
+
+	#mobile-tout {
+	    display: block;
+	}
+
+	#lede-tout {
+	    display: none;
+	}
 }
 
 #footer {
@@ -85,31 +113,8 @@ $white: #fff;
     display: none;
 }
 
-#main {
-	.video-tout {
-	    display: block;
-	    width: 200px;
-	    background-color: $black;
-	    padding: 10px;
-	    color: $white;
-	    font-family: $HaasBold;
-	    // text-align: center;
-	    margin: 0.5em 0 4% 1em;
-	    position: relative;
-	    z-index: 1;
-	    box-sizing: content-box;
-	}
-
-	a {
-		color: $white;
-		text-decoration: none;
-	}
-
-	#mobile-tout {
-	    display: block;
-	}
-
-	#lede-tout {
-	    display: none;
-	}
+.video-tout {
+    a {
+    	color: $white;
+    }
 }

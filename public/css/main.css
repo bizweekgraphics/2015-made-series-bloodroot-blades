@@ -370,12 +370,13 @@ picture {
   padding: 0;
   text-align: left;
   margin: 0.5em 0 0;
+  color: #8a6945;
 }
-/* line 76, ../scss/layout/_ledes.scss */
+/* line 77, ../scss/layout/_ledes.scss */
 .lede-content .dek em {
   font-family: "BWHaasText-76BoldItalic", serif;
 }
-/* line 81, ../scss/layout/_ledes.scss */
+/* line 82, ../scss/layout/_ledes.scss */
 .lede-content .byline-feat {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
@@ -384,36 +385,40 @@ picture {
 }
 
 /*--- VIDEO LEDE ---*/
-/* line 93, ../scss/layout/_ledes.scss */
+/* line 94, ../scss/layout/_ledes.scss */
 .lede-video {
   width: 100%;
   height: auto;
   position: relative;
   margin-bottom: 1em;
 }
-/* line 99, ../scss/layout/_ledes.scss */
+/* line 100, ../scss/layout/_ledes.scss */
 .lede-video video {
   width: 100%;
   display: none;
 }
-/* line 104, ../scss/layout/_ledes.scss */
+/* line 105, ../scss/layout/_ledes.scss */
 .lede-video .mobile-lede {
   display: block;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 110, ../scss/layout/_ledes.scss */
+/* line 111, ../scss/layout/_ledes.scss */
 .lede-video .video-js {
   margin-top: -56.25%;
   z-index: 1000;
+  width: 100% !important;
+  min-width: 320px;
+  height: 100% !important;
+  min-height: 180px;
 }
 
-/* line 117, ../scss/layout/_ledes.scss */
+/* line 122, ../scss/layout/_ledes.scss */
 #top-video {
   display: none;
 }
 
-/* line 122, ../scss/layout/_ledes.scss */
+/* line 127, ../scss/layout/_ledes.scss */
 .video-tout a {
   color: #fff;
 }
@@ -629,7 +634,20 @@ p a {
   display: none;
 }
 
+/* line 62, ../scss/layout/_body.scss */
+.terminal .video-player, .terminal .video-tout {
+  display: none !important;
+}
+
 /*-- MEDIA QUERIES -- */
+/* TABLET */
+@media screen and (min-width: 560px) {
+  /* line 4, ../scss/mediaqueries/_tablet.scss */
+  .lede-video .video-js {
+    min-width: 560px;
+    min-height: 315px;
+  }
+}
 @media screen and (min-width: 768px) {
   /* line 3, ../scss/mediaqueries/_desktop.scss */
   .lede-content {
@@ -723,6 +741,13 @@ p a {
   /* line 104, ../scss/mediaqueries/_desktop.scss */
   #main #lede-tout {
     display: block;
+  }
+}
+@media screen and (min-width: 970px) {
+  /* line 111, ../scss/mediaqueries/_desktop.scss */
+  .lede-video .video-js {
+    min-width: 970px;
+    min-height: 546px;
   }
 }
 /* RETINA */

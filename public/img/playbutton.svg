@@ -1,0 +1,5 @@
+<svg version="1.1" id="playbtn" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+<circle cx="50" cy="50" r="50"/>
+<polygon fill="#FFFFFF" points="32.854,18.5 89.146,51 32.854,83.5 "/>
+</svg>

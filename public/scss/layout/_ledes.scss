@@ -72,6 +72,7 @@ $white: #fff;
 		text-align: left;
 		// background-color: $white;
 		margin: 0.5em 0 0;
+		color: $quote-color;
 
 		em {
 			font-family: $bwhaas-bold-italic;
@@ -110,6 +111,10 @@ $white: #fff;
 	.video-js {
 	    margin-top: -56.25%;
 	    z-index: 1000;
+	    width: 100% !important;
+	    min-width: 320px;
+	    height: 100% !important;
+	    min-height: 180px;
 	 }
 
 }
